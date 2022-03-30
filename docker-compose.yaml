@@ -11,3 +11,8 @@ services:
     image: adicom/admin-mongo
     ports:
       - 8282:1234
+  echo-server:
+    container_name: whoami
+    image: containous/whoami
+    ports:
+      - 8181:80
